@@ -5,12 +5,12 @@ class Television:
   MAX_CHANNEL = 3
 
 
-  def __init__(self):
+ def __init__(self):
     """Initialize the TV with default settings."""
-    self.__status = False
-    self.__muted = False
-    self.__volume = Television.MIN_VOLUME
-    self.__channel = Television.MIN_CHANNEL
+   self.__status = False
+   self.__muted = False
+   self.__volume = Television.MIN_VOLUME
+   self.__channel = Television.MIN_CHANNEL
 
 def power(self):
   """Turn TV on/off."""
@@ -20,7 +20,8 @@ def power(self):
 def mute(self):
   """Toggle mute only when TV is on."""
   if self.__status:
-    if self.__muted = not self.__muted 
+    self.__muted = not self.__muted
+    
 
 
 def channel_up(self):
