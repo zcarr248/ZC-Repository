@@ -17,7 +17,7 @@ def power(self):
   self.__status = not self.__status
 
 
-def mute(self):
+def mute(self) -> None
   """Toggle mute only when TV is on."""
   if self.__status:
     self.__muted = not self.__muted
